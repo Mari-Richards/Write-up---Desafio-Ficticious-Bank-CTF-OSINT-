@@ -1,0 +1,76 @@
+## 1. Identificando Colaboradores
+
+Objetivo: Navegar pelo site do Ficticious Bank e identificar todos os colaboradores listados.
+
+URL: https://www.ficticiousbank.com
+
+Resultado:
+Foram identificados 4 líderes e 7 colaboradores, totalizando 11 pessoas.
+
+Resposta: `11`
+
+---
+
+## 2. Mapeando E-mails
+
+Objetivo: Encontrar o e-mail da colaboradora Alessandra Melo.
+
+Resultado:  
+`alessandra.melo@ficticiousbank.com`
+
+Resposta: `alessandra.melo@ficticiousbank.com`
+
+---
+
+## 3. Padrão de E-mails
+
+Objetivo: Inferir o e-mail do CEO com base no padrão dos colaboradores.
+
+Padrão detectado: `nome.sobrenome@ficticiousbank.com`
+
+Resposta (José Fernandes): `jose.fernandes@ficticiousbank.com`
+
+---
+
+## 4. Buscando Credenciais Vazadas
+
+Objetivo: Analisar um dump publicado no Pastebin pelo grupo "P3PP4 H4CK3RS" e identificar se há colaborador afetado.
+
+Link do Dump: https://pastebin.com/9rm2KeXd  
+Senha: `z2iTHAcrp2`
+
+Credenciais encontradas: 
+```
+martin.dias@ficticiousbank.com
+Senha: kRzM36SU9e
+```
+
+Resposta: `kRzM36SU9e`
+
+---
+
+## 5. Reutilização de Senhas
+
+Objetivo: Verificar se o colaborador afetado reutilizou a senha para o acesso ao webmail da empresa.
+
+Login testado: 
+- E-mail: martin.dias@ficticiousbank.com  
+- Senha: kRzM36SU9e
+
+Acesso bem-sucedido. Flag encontrada na caixa de entrada.
+
+Flag: `GoHacking{ProtejaSuasSenhas!}`
+
+---
+
+## Conclusão
+
+Esse desafio demonstra a importância de:
+- Evitar reutilização de senhas.
+- Ter políticas de segurança adequadas para exposição de e-mails e colaboradores.
+- Monitorar vazamentos públicos.
+- Adotar autenticação multifator sempre que possível.
+
+---
+
+Desafio realizado como parte de um laboratório prático de segurança da informação.*
